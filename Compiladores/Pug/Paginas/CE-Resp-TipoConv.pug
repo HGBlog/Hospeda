@@ -1,0 +1,78 @@
+.row
+	include ../Estrutura/CalendarioHorizontal
+
+	// AQUI COMEÇA O BREADCRUMB DE AÇÕES
+	.col-12.breadPadrao
+		a.badge.badge-danger(href="Cad-Evento-P1.html" title="Quem agendou foi a Equipe Nacional")
+			i.fas.fa-users
+			| &nbsp; Equipe Nacional
+		a.badge.badge-danger(href="#" title="Tipo de Convivência")
+			i.fas.fa-calendar-check
+			| &nbsp; Tipo de Convivência
+		
+		span.float-right
+			small.badge.badge-primary
+				| Passo 2 
+			| de 5
+	// ------- FIM DO BREADCRUMB DE AÇÕES
+
+	// AQUI INICIA A PARTE DE CONTEÚDO GERAL
+	.col-12.btOpcoesPadrao
+		h2.display-4.text-center.text-uppercase
+			| Nesse dia Iniciará...?
+		.mx-auto.row
+			.col-12.col-sm-6.col-md-3
+				button(type="button", onClick= "window.location= 'Cad-Evento-P3.html'").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Inicio Curso
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Famílias
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Catequistas
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Vocacionados
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Vocacionadas
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Dois a Dois
+
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-calendar-check.d-block
+					| Convivência Presbíteros
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.fas.fa-church.d-block
+					| Retiro da Diocese
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.far.fa-sun.d-block
+					| Vigilia
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.fas.fa-graduation-cap.d-block
+					| Palestra
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.fas.fa-briefcase.d-block
+					| Reunião
+			.col-12.col-sm-6.col-md-3
+				button(type="button").btn.btn-lg.btn-block
+					i.fas.fa-book.d-block
+					| Celebração
+	// ------- FIM DE CONTEÚDO GERAL

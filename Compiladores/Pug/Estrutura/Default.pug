@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="Keywords", content="")
+        meta(name="Description", content="")
+        meta(name="author", content="")
+        meta(name="MSSmartTagsPreventParsing", content="true")
+        meta(http-equiv="imagetoolbar", content="no")
+        meta(name="robots", content="all")
+        meta(name="robots", content="index,follow")
+        meta(name="DC.title", content="")
+        meta(name="copyright", content="")
+        meta(http-equiv="Content-Language", content="pt-BR")
+        meta(name="target_country", content="br")
+        meta(name="country", content="Brazil")
+        meta(name="Revisit-After", content="5 Days")
+        meta(name="resource-type", content="document")
+        meta(name="classification", content="Internet")
+        meta(name="distribution", content="Global")
+        meta(name="rating", content="General")
+        meta(name="doc-class", content="Completed")
+        meta(http-equiv="cache-control", content="no-cache")
+        meta(http-equiv="Pragma", content="no-cache")
+        meta(name="theme-color", content="#ffffff")
+        
+        //- BLOCK COM O TÍTULO ESTÁ NA INDEX
+        title
+            block title
+        
+        // AQUI FICA TODOS OS CSSs DO SITE
+        
+        link(href="assets/css/lib/bootstrap/bootstrap.css", rel="stylesheet")
+        link(href="assets/css/lib/bootstrap/bootstrap-grid.css", rel="stylesheet")
+        link(href="assets/css/lib/bootstrap/bootstrap-reboot.css", rel="stylesheet")
+        link(href="assets/css/lib/fontawesome/css/fontawesome-all.min.css", rel="stylesheet")
+        
+        block CSSEspecifico
+            
+        link(href="assets/css/EstiloPadrao.css", rel="stylesheet")
+
+        // ------- FIM DE TODOS OS CSSs DO SITE
+
+        //- AQUI FICA O FAVICON DO SITE
+        link(rel="shortcut icon", href="assets/Img/Icon/favicon.ico", type="image/x-icon")
+    
+    //- TODOS OS INCLUDES VÃO ENTRAR AQUI
+    body
+        block content
+
+    // AQUI FICA TODOS OS SCRIPTS DO SISTEMA
+
+    script(src="assets/js/lib/jquery.min.js")
+    script(src="assets/js/lib/popper/popper.min.js")
+    script(src="assets/js/lib/popper/popper-utils.min.js")
+    script(src="assets/js/lib/bootstrap/bootstrap.min.js")
+    script(src="assets/js/lib/bootstrap/bootstrap.bundle.min.js")
+        
+    block ScriptEspecifico
+
+    // ------- FIM DE TODOS OS SCRIPTS DO SISTEMA
+    

@@ -1,0 +1,111 @@
+.row
+	include ../Estrutura/CalendarioHorizontal
+
+	// AQUI COMEÇA O BREADCRUMB DE AÇÕES
+	.col-12.breadPadrao
+		a.badge.badge-danger(href="Cad-Evento-P1.html" title="Quem agendou foi a Equipe Nacional")
+			i.fas.fa-users
+			| &nbsp; Equipe Nacional
+		a.badge.badge-danger(href="Cad-Evento-P2.html" title="Tipo de Conv.: Convivência de Curso")
+			i.fas.fa-calendar-check
+			| &nbsp; Convivência de Curso
+		a.badge.badge-danger(href="Cad-Evento-P3.html" title="Participantes Permitidos")
+			i.fas.fa-users
+			| &nbsp; Participantes
+		a.badge.badge-danger(href="Cad-Evento-P4.html" title="Casas Escolhida: CCSFN")
+			i.fas.fa-home
+			| &nbsp; Casa: CCSFN
+		a.badge.badge-danger(href="#" title="Finalizar Informações")
+			i.far.fa-calendar-check
+			| &nbsp; Finalização
+		
+		span.float-right
+			small.badge.badge-primary
+				| Passo 5 
+			| de 5
+	// ------- FIM DO BREADCRUMB DE AÇÕES
+
+	// AQUI INICIA A PARTE DE CONTEÚDO GERAL
+	.col-12.btOpcoesPadrao
+		h2.display-4.text-center.text-uppercase
+			| Finalize as Informações
+		.mx-auto.col-10.offset-2.row.formFinalizacao.shadowPadrao
+			.col-12
+				p.h5
+					| Convivências de Inicio de Curso normalmente acontecem de...
+				.row
+					.col-12.col-sm-6.col-md-3
+						label.col-form-label(for="inputDataDe") De
+						input#inputDataDe.dtpicker.form-control(type='text', placeholder="00-00-0000", data-rangeto="#inputDataAte")
+					.col-12.col-sm-6.col-md-3
+						label.labelVazia.col-form-label(for="inputHoraDe") &nbsp;
+						input#inputHoraDe.form-control(type='text', placeholder="00:00")
+					.col-12.col-sm-6.col-md-3
+						label.col-form-label(for="inputDataAte") Até
+						input#inputDataAte.dtpicker.form-control(type='text', placeholder="00-00-0000", data-rangefrom="#inputDataDe")
+					.col-12.col-sm-6.col-md-3
+						label.labelVazia.col-form-label(for="inputHoraAte") &nbsp;
+						input#inputHoraAte.form-control(type='text', placeholder="00:00")
+					.col-12
+						.form-check
+							input#CheckUnicoEventCasa.form-check-input(type="checkbox", value="")
+							label.form-check-label(for="CheckUnicoEventCasa")
+								| Único Evento da Casa
+
+			.col-12
+				hr
+				p.h5
+					| As inscrições dos convidados poderão ser realizadas até...
+				.row
+					.col-12
+						.form-group
+							label.sr-only(for="PrazoInscricao") Bloquear Inscrições
+							select#PrazoInscricao.form-control
+								option(value="10d") ...10 dias antes do evento
+								option(value="20d") ...20 dias antes do evento
+								option(value="30d") ...30 dias antes do evento
+			.col-12
+				hr
+				p.h5
+					| O que será Usado?
+				.row
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#SalaAzul.custom-control-input(type="checkbox", value="001")
+							label.custom-control-label(for="SalaAzul") Sala Azul
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#SalaVerde.custom-control-input(type="checkbox", value="002")
+							label.custom-control-label(for="SalaVerde") Sala Verde
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#SalaVermelha.custom-control-input(type="checkbox", value="003")
+							label.custom-control-label(for="SalaVermelha") Sala Vermelha
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#TendaEucaristica.custom-control-input(type="checkbox", value="004")
+							label.custom-control-label(for="TendaEucaristica") Tenda Eucaristica
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#Hospedagem.custom-control-input(type="checkbox", value="005")
+							label.custom-control-label(for="Hospedagem") Hospedagem
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#Refeitorio.custom-control-input(type="checkbox", value="001")
+							label.custom-control-label(for="Refeitorio") Refeitório
+					.col-12.col-sm-6.col-md-3
+						.custom-control.custom-checkbox
+							input#Estacionamento.custom-control-input(type="checkbox", value="001")
+							label.custom-control-label(for="Estacionamento") Estacionamento
+				hr
+				br
+				br
+			.col-12
+				button.btn.btn-lg.btn-block.btnLine.btn-success(type="button", data-toggle="modal" data-target="#ModalFinalizarInfo") 
+					i.fas.fa-check-circle &nbsp; &nbsp;
+					| &nbsp; Finalizar Cadastro
+		
+					
+
+			
+	// ------- FIM DE CONTEÚDO GERAL

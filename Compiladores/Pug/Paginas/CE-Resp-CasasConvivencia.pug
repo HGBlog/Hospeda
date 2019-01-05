@@ -1,0 +1,53 @@
+.row
+	include ../Estrutura/CalendarioHorizontal
+
+	// AQUI COMEÇA O BREADCRUMB DE AÇÕES
+	.col-12.breadPadrao
+		a.badge.badge-danger(href="Cad-Evento-P1.html" title="Quem agendou foi a Equipe Nacional")
+			i.fas.fa-users
+			| &nbsp; Equipe Nacional
+		a.badge.badge-danger(href="Cad-Evento-P2.html" title="Tipo de Conv.: Convivência de Curso")
+			i.fas.fa-calendar-check
+			| &nbsp; Convivência de Curso
+		a.badge.badge-danger(href="Cad-Evento-P3.html" title="Participantes Permitidos")
+			i.fas.fa-users
+			| &nbsp; Participantes
+		a.badge.badge-danger(href="#" title="Casas de Convivência que serão usadas")
+			i.fas.fa-home
+			| &nbsp; Casas
+		
+		span.float-right
+			small.badge.badge-primary
+				| Passo 4 
+			| de 5
+	// ------- FIM DO BREADCRUMB DE AÇÕES
+
+	// AQUI INICIA A PARTE DE CONTEÚDO GERAL
+	.col-12.btOpcoesPadrao
+		h2.display-4.text-center.text-uppercase
+			| Casas que serão utilizadas
+		.mx-auto.row
+			.btn-group-toggle.col-12.col-sm-6.col-md-4(data-toggle="buttons")
+				label.btn.btn-lg.btn-block.btnCCSFN(for="CCSFN")
+					input#CCSFN(type="checkbox", autocomplete="off")
+					span
+						| Sagrada Família de Nazaré
+			.btn-group-toggle.col-12.col-sm-6.col-md-4(data-toggle="buttons")
+				label.btn.btn-lg.btn-block.btnCCDM(for="CCDM")
+					input#CCDM(type="checkbox", autocomplete="off")
+					span
+						| Domus Mariae
+			.btn-group-toggle.col-12.col-sm-6.col-md-4(data-toggle="buttons")
+				label.btn.btn-lg.btn-block.btnCCA(for="CCA")
+					input#CCA(type="checkbox", autocomplete="off")
+					span
+						| Angicus
+
+		.mx-auto.row
+			.col-12
+				button.btn.btn-lg.btn-block.btnLine.btn-success(type="button", onClick= "window.location= 'Cad-Evento-P5.html'") 
+					| &nbsp; Continuar Cadastro &nbsp; &nbsp; 
+					i.fas.fa-angle-double-right
+
+			
+	// ------- FIM DE CONTEÚDO GERAL

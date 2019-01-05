@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="author" content="">
+    <meta name="MSSmartTagsPreventParsing" content="true">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="">
+    <meta name="copyright" content="">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="target_country" content="br">
+    <meta name="country" content="Brazil">
+    <meta name="Revisit-After" content="5 Days">
+    <meta name="resource-type" content="document">
+    <meta name="classification" content="Internet">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="doc-class" content="Completed">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="theme-color" content="#ffffff">
+    <title>Hospeda CNC - Cadastrando um novo Evento
+    </title>
+    <!-- AQUI FICA TODOS OS CSSs DO SITE-->
+    <link href="assets/css/lib/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap/bootstrap-grid.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap/bootstrap-reboot.css" rel="stylesheet">
+    <link href="assets/css/lib/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/lib/dcalendar.picker/dcalendar.picker.css" rel="stylesheet">
+    <link href="assets/css/EstiloPadrao.css" rel="stylesheet">
+    <!-- ------- FIM DE TODOS OS CSSs DO SITE-->
+    <link rel="shortcut icon" href="assets/Img/Icon/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- AQUI FICA OS ALERTS DO SISTEMA-->
+    <div class="alert bg-danger alertGeral alertTemp text-white alert-dismissible" role="alert">
+      <div class="media"><i class="far fa-bell mr-3"></i>
+        <div class="media-body">
+          <h4 class="alert-heading">PROTÓTIPO DE TESTE!!!</h4>
+          <p>ISSO SIGNIFICA QUE APENAS ALGUNS BOTÕES FUNCIONAM....</p>
+        </div>
+      </div>
+      <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <!-- AQUI INICIA O MENU DO TOPO-->
+    <nav class="navbar fixed-top navbar-light bg-light navCncPadrao"><a class="btn rounded-circle BtnVoltar" href="javascript:history.go(-1)" title="Voltar Página Inicial"><i class="fas fa-angle-left"></i><span class="text-hide">Voltar</span></a>
+      <h1 class="navbar-brand h1Titulo"><img class="d-inline-block align-top" src="assets/Img/Logos/logo-Hospeda-1.png" alt="Logo Hospeda"><img class="d-inline-block align-top imgMobile" src="assets/Img/Logos/logo-Hospeda-Mobile.png" alt="Logo Hospeda"><small class="lead d-inline">&nbsp;&nbsp; Cadastrar Novo Evento</small>
+      </h1>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"><a class="nav-link" href="index.html" title="Calendário de Eventos da Casa"> <i class="fas fa-calendar-alt"></i>Calendário</a></li>
+        <li class="nav-item"><a class="nav-link" href="Org-Quarto-P1.html" title="Organizar Hospedagem"> <i class="fas fa-bed"></i>Organizar Hosped.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Cadastro de Equipe"> <i class="fas fa-users"></i>Cad. Equipe</a></li>
+        <li class="nav-item"><a class="nav-link text-hide LinkPerfil rounded-circle" href="#" title="Perfil do Usuário">Perfil do Usuário</a></li>
+        <li class="nav-item"><a class="nav-link BtnIcon" href="#" title="Sair do Sistema"> <i class="fas fa-sign-out-alt"></i><span class="text-hide">Sair do Sistema</span></a></li>
+      </ul>
+    </nav>
+    <!-- ------- FIM DO MENU DO TOPO-->
+    <main class="container-fluid">
+      <div class="row">
+        <!-- AQUI INICIA O CALENDÁRIO HORIZONTAL-->
+        <div class="col-12 CalendarioHor">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="d-none col-1 d-sm-block text-center"><a href="#" title=""><small>Ter </small>10<small> Out</small></a></div>
+              <div class="d-none col-1 d-sm-block text-center"><a href="#" title=""><small>Qua </small>11<small> Out</small></a></div>
+              <div class="col-4 col-sm-1 text-center"><a href="#" title=""><small>Qui </small>12<small> Out</small></a></div>
+              <div class="col-4 col-sm-4 text-center">
+                <h4>Dia Selecionado</h4><a class="active" href="#" title="Dia Selecionado" disabled><small>Sex </small>13<i class="far fa-calendar-alt"></i><small> Out</small></a>
+              </div>
+              <div class="col-4 col-sm-1 text-center"><a href="#" title=""><small>Sab </small>14<small> Out</small></a></div>
+              <div class="d-none col-1 d-sm-block text-center"><a href="#" title=""><small>Dom </small>15<small> Out</small></a></div>
+              <div class="d-none col-1 d-sm-block text-center"><a href="#" title=""><small>Seg </small>16<small> Out</small></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- ------- FIM DO CALENDÁRIO HORIZONTAL-->
+        <!-- AQUI COMEÇA O BREADCRUMB DE AÇÕES-->
+        <div class="col-12 breadPadrao"><a class="badge badge-danger" href="#" title="Quem vai Agendar?"><i class="fas fa-users"></i>&nbsp; Quem vai agendar?</a><span class="float-right"><small class="badge badge-primary">Passo 1 </small>de 5</span></div>
+        <!-- ------- FIM DO BREADCRUMB DE AÇÕES	-->
+        <!-- AQUI INICIA A PARTE DE CONTEÚDO GERAL-->
+        <div class="col-12 btOpcoesPadrao">
+          <h2 class="display-4 text-center text-uppercase">Quem vai agendar?</h2>
+          <div class="mx-auto row">
+            <div class="col-12 col-sm-6 col-md-4">
+              <button class="btn btn-lg btn-block" type="button" onClick="window.location= 'Cad-Evento-P2.html'"><i class="fas fa-users d-block"></i>Equipe Nacional</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <button class="btn btn-lg btn-block" type="button" data-toggle="modal" data-target="#ModalEquipeItinerante"><i class="fas fa-users d-block"></i>Equipe Itinerante</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <button class="btn btn-lg btn-block" type="button" data-toggle="modal" data-target="#ModalEquipeLocal"><i class="fas fa-users d-block"></i>Equipe Local</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <button class="btn btn-lg btn-block" type="button" data-toggle="modal" data-target="#ModalComunidadeLocal"><i class="fas fa-users d-block"></i>Comunidade Local</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <button class="btn btn-lg btn-block" type="button" data-toggle="modal" data-target="#ModalContratante"><i class="fas fa-users d-block"></i>Contratante</button>
+            </div>
+          </div>
+          <div class="mx-auto row">
+            <div class="col-12">
+              <button class="btn btn-lg btn-block btnLine" type="button" data-toggle="modal" data-target="#ModalAgendarNada"> <i class="fas fa-ban"> </i>&nbsp; Não Agendar Nada Nesse Dia</button>
+            </div>
+          </div>
+        </div>
+        <!-- ------- FIM DE CONTEÚDO GERAL-->
+      </div>
+    </main>
+    <!-- MODAL DE EQUIPE ITINERANTE-->
+    <div class="modal fade" id="ModalEquipeItinerante" tabindex="-1" role="dialog" aria-labelledby="ModalEquipeItinerante" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Equipe Itinerante</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="" method="" action="">
+              <div class="form-group">
+                <label class="col-form-label" for="SelEquipeItinerante">Qual Equipe Está Agendando?</label>
+                <select class="form-control form-control-lg" name="SelEquipeItinerante">
+                  <option value="0">Selecione</option>
+                  <option value="1">Exemplo de Equipe 1</option>
+                  <option value="2">Exemplo de Equipe 2</option>
+                  <option value="3">Exemplo de Equipe 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" onClick="window.location= 'Cad-Evento-P2.html'"> <i class="far fa-check-circle"></i>&nbsp; Confirmar</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal"> <i class="fas fa-ban"> </i>&nbsp; Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- FIM DO MODAL DE EQUIPE ITINERANTE-->
+    <!-- MODAL DE EQUIPE LOCAL-->
+    <div class="modal fade" id="ModalEquipeLocal" tabindex="-1" role="dialog" aria-labelledby="ModalEquipeLocal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Equipe Local</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="" method="" action="">
+              <div class="form-group">
+                <label class="col-form-label" for="SelEquipeLocal">Qual Equipe Local Está Agendando?</label>
+                <select class="form-control form-control-lg" name="SelEquipeLocal">
+                  <option value="0">Selecione</option>
+                  <option value="1">Exemplo de Equipe 1</option>
+                  <option value="2">Exemplo de Equipe 2</option>
+                  <option value="3">Exemplo de Equipe 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" onClick="window.location= 'Cad-Evento-P2.html'"> <i class="far fa-check-circle"></i>&nbsp; Confirmar</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal"> <i class="fas fa-ban"> </i>&nbsp; Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- FIM DO MODAL DE EQUIPE LOCAL-->
+    <!-- MODAL DE COMUNIDADE LOCAL-->
+    <div class="modal fade" id="ModalComunidadeLocal" tabindex="-1" role="dialog" aria-labelledby="ModalComunidadeLocal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comunidade Local</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="" method="" action="">
+              <div class="form-group">
+                <label class="col-form-label" for="SelComLocal">Qual Comunidade Local Está Agendando?</label>
+                <select class="form-control form-control-lg" name="SelComLocal">
+                  <option value="0">Selecione</option>
+                  <option value="1">Exemplo de Comunidade 1</option>
+                  <option value="2">Exemplo de Comunidade 2</option>
+                  <option value="3">Exemplo de Comunidade 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" onClick="window.location= 'Cad-Evento-P2.html'"> <i class="far fa-check-circle"></i>&nbsp; Confirmar</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal"> <i class="fas fa-ban"> </i>&nbsp; Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- FIM DO MODAL DE COMUNIDADE LOCAL-->
+    <!-- MODAL DE CONTRANTANTE-->
+    <div class="modal fade" id="ModalContratante" tabindex="-1" role="dialog" aria-labelledby="ModalContratante" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contratante</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="" method="" action="">
+              <div class="form-group">
+                <label class="col-form-label" for="InputContrante">Quem é o contratante?</label>
+                <input class="form-control form-control-lg" type="text" name="InputContrante" placeholder="Nome Completo">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" onClick="window.location= 'Cad-Evento-P2.html'"> <i class="far fa-check-circle"></i>&nbsp; Confirmar</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal"> <i class="fas fa-ban"> </i>&nbsp; Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- FIM DO MODAL DE CONTRANTANTE-->
+    <!-- MODAL DE COMUNIDADE LOCAL-->
+    <div class="modal fade" id="ModalAgendarNada" tabindex="-1" role="dialog" aria-labelledby="ModalComunidadeLocal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Não Agendar Nada Nesse Dia!</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="" method="" action="">
+              <div class="row">
+                <div class="col">
+                  <label class="col-form-label" for="inputDe">De</label>
+                  <input class="dtpicker form-control" id="inputDe" type="text" placeholder="00/00/0000" data-rangeto="#inputAte">
+                </div>
+                <div class="col">
+                  <label class="col-form-label" for="inputAte">Até</label>
+                  <input class="dtpicker form-control" id="inputAte" type="text" placeholder="00/00/0000" data-rangefrom="#inputDe">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" onClick="window.location= 'index.html'"> <i class="far fa-check-circle"></i>&nbsp; Confirmar</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal"> <i class="fas fa-ban"> </i>&nbsp; Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- FIM DO MODAL DE COMUNIDADE LOCAL-->
+  </body>
+  <!-- AQUI FICA TODOS OS SCRIPTS DO SISTEMA-->
+  <script src="assets/js/lib/jquery.min.js"></script>
+  <script src="assets/js/lib/popper/popper.min.js"></script>
+  <script src="assets/js/lib/popper/popper-utils.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lib/dcalendar.picker/dcalendar.picker.js"></script>
+  <script src="assets/js/ScriptsGerais.js"></script>
+  <!-- ------- FIM DE TODOS OS SCRIPTS DO SISTEMA-->
+</html>

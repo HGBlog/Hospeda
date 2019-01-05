@@ -1,0 +1,44 @@
+//- OBS: SE FOR TRABALHAR COM GRID NAS PRINCIPAIS TAGS, PRECISA MANTER OS CLEARFIX ABAIXO. SE NÃO FOR TRABALHAR COM GRID DE INICIO NÃO TEM NECESSIDADE DE DEIXA-LAS AQUI...
+
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/Default
+
+//- TÍTULO DA PÁGINA ↓
+block title 
+	| Hospeda CNC - Cadastrando um novo Evento
+
+block CSSEspecifico
+	//- AQUI ENTRA CSSs ESPECIFICOS
+	link(href="assets/css/lib/dcalendar.picker/dcalendar.picker.css", rel="stylesheet")
+
+//- TÍTULO QUE APARECE NO TOPO DA PÁGINA ↓
+mixin TituloPagina()
+	small.lead.d-inline
+		| &nbsp;&nbsp; Cadastrar Novo Evento
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	// AQUI FICA OS ALERTS DO SISTEMA
+	.alert.bg-danger.alertGeral.alertTemp.text-white.alert-dismissible(role='alert')
+		.media
+			i.far.fa-bell.mr-3
+			.media-body
+				h4.alert-heading PROTÓTIPO DE TESTE!!!
+				p
+					| AS INFORMAÇÕES CADASTRADAS NÃO SERÃO GRAVADAS
+
+		button.close(type='button', data-dismiss='alert', aria-label='Close')
+			span(aria-hidden='true') ×
+			
+	//- AQUI COLOCAR AS PARTES FIXAS COMO MENU TOPO, CONTEUDO E FOOTER
+	include ParteFixa/Nav
+
+	main.container-fluid
+		include Paginas/CE-Resp-FinalizacaoInformacao.pug
+
+	include Paginas/Modal/CE-R-FI-Modal
+
+block ScriptEspecifico
+	//- AQUI ENTRA SCRIPTS ESPECIFICOS		
+	script(src="assets/js/lib/dcalendar.picker/dcalendar.picker.js")
+	script(src="assets/js/ScriptsGerais.js")

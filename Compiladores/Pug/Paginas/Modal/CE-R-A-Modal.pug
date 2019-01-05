@@ -1,0 +1,146 @@
+
+// MODAL DE EQUIPE ITINERANTE
+#ModalEquipeItinerante.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalEquipeItinerante", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Equipe Itinerante
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.form-group
+						label.col-form-label(for="SelEquipeItinerante") Qual Equipe Está Agendando?
+						select(name="SelEquipeItinerante").form-control.form-control-lg
+							option(value="0")
+								| Selecione
+							option(value="1")
+								| Exemplo de Equipe 1
+							option(value="2")
+								| Exemplo de Equipe 2
+							option(value="3")
+								| Exemplo de Equipe 3
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'Cad-Evento-P2.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE EQUIPE ITINERANTE
+
+
+
+// MODAL DE EQUIPE LOCAL
+#ModalEquipeLocal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalEquipeLocal", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Equipe Local
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.form-group
+						label.col-form-label(for="SelEquipeLocal") Qual Equipe Local Está Agendando?
+						select(name="SelEquipeLocal").form-control.form-control-lg
+							option(value="0")
+								| Selecione
+							option(value="1")
+								| Exemplo de Equipe 1
+							option(value="2")
+								| Exemplo de Equipe 2
+							option(value="3")
+								| Exemplo de Equipe 3
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'Cad-Evento-P2.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE EQUIPE LOCAL
+
+// MODAL DE COMUNIDADE LOCAL
+#ModalComunidadeLocal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalComunidadeLocal", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Comunidade Local
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.form-group
+						label.col-form-label(for="SelComLocal") Qual Comunidade Local Está Agendando?
+						select(name="SelComLocal").form-control.form-control-lg
+							option(value="0")
+								| Selecione
+							option(value="1")
+								| Exemplo de Comunidade 1
+							option(value="2")
+								| Exemplo de Comunidade 2
+							option(value="3")
+								| Exemplo de Comunidade 3
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'Cad-Evento-P2.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE COMUNIDADE LOCAL
+
+// MODAL DE CONTRANTANTE
+#ModalContratante.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalContratante", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Contratante
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.form-group
+						label.col-form-label(for="InputContrante") Quem é o contratante?
+						input.form-control.form-control-lg(type='text', name="InputContrante", placeholder="Nome Completo")
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'Cad-Evento-P2.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE CONTRANTANTE
+
+// MODAL DE COMUNIDADE LOCAL
+#ModalAgendarNada.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalComunidadeLocal", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Não Agendar Nada Nesse Dia!
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.row
+						.col
+							label.col-form-label(for="inputDe") De
+							input#inputDe.dtpicker.form-control(type='text', placeholder="00/00/0000", data-rangeto="#inputAte")
+						.col
+							label.col-form-label(for="inputAte") Até
+							input#inputAte.dtpicker.form-control(type='text', placeholder="00/00/0000", data-rangefrom="#inputDe")
+						
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'index.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE COMUNIDADE LOCAL

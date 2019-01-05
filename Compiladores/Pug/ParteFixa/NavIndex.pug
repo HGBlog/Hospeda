@@ -1,0 +1,30 @@
+// AQUI INICIA O MENU DO TOPO
+nav.navbar.fixed-top.navbar-light.bg-light.navCncPadrao
+	h1.navbar-brand
+		img.d-inline-block.align-top(src="assets/Img/Logos/logo-Hospeda-1.png", alt="Logo Hospeda")
+		img.d-inline-block.align-top.imgMobile(src="assets/Img/Logos/logo-Hospeda-Mobile.png", alt="Logo Hospeda")
+		+TituloPagina()
+			
+	
+	ul.nav.justify-content-end
+		li.nav-item
+			a.nav-link(href="index.html", title="Calendário de Eventos da Casa") 
+				i.fas.fa-calendar-alt
+				| Calendário
+		li.nav-item
+			a.nav-link(href="Org-Quarto-P1.html", title="Organizar Hospedagem") 
+				i.fas.fa-bed
+				| Organizar Hosped.
+		li.nav-item
+			a.nav-link(href="#", title="Cadastro de Equipe") 
+				i.fas.fa-users
+				| Cad. Equipe
+		li.nav-item
+			a.nav-link.text-hide.LinkPerfil.rounded-circle(href='#', title="Perfil do Usuário")
+				| Perfil do Usuário
+		li.nav-item
+			a.nav-link.BtnIcon(href="#", title="Sair do Sistema") 
+				i.fas.fa-sign-out-alt
+				span.text-hide
+					| Sair do Sistema
+// ------- FIM DO MENU DO TOPO

@@ -1,0 +1,41 @@
+.row
+	
+	// AQUI COMEÇA O BREADCRUMB DE AÇÕES
+	.col-12.breadPadrao.MarginBread
+		a.badge.badge-danger(href="Org-Quarto-P1.html" title="Evento enc.: Convivência de curso")
+			i.far.fa-calendar-check
+			| &nbsp; Convivência de Inicio de Curso
+		a.badge.badge-danger(href="#" title="Casa que será organizada")
+			i.fas.fa-home
+			| &nbsp; Casas
+		
+		span.float-right
+			small.badge.badge-primary
+				| Passo 2 
+			| de 3
+	// ------- FIM DO BREADCRUMB DE AÇÕES	
+
+	// AQUI INICIA A PARTE DE CONTEÚDO GERAL
+	.col-12.btOpcoesPadrao
+		h2.display-4.text-center.text-uppercase
+			| Organizar os quartos de qual casa?
+		.mx-auto.row.btn-group.btn-group-toggle.radioSelActive(data-toggle="buttons")
+			.col-12.col-sm-6.col-md-4
+				label.btn.btn-lg.btn-block.btnCCSFN(for="CCSFN", onclick="javascript:window.location.href='Org-Quarto-P3.html'; return false;")
+					input#CCSFN(type="radio", name="options", autocomplete="off")
+					span
+						| Sagrada Família de Nazaré
+			.col-12.col-sm-6.col-md-4
+				label.btn.btn-lg.btn-block.btnCCDM(for="CCDM", onclick="javascript:window.location.href='#'; return false;")
+					input#CCDM(type="radio", name="options", autocomplete="off")
+					span
+						| Domus Mariae
+			.col-12.col-sm-6.col-md-4
+				label.btn.btn-lg.btn-block.btnCCA(for="CCA", onclick="javascript:window.location.href='#'; return false;")
+					input#CCA(type="radio", name="options", autocomplete="off")
+					span
+						| Angicus
+
+
+		
+	// ------- FIM DE CONTEÚDO GERAL

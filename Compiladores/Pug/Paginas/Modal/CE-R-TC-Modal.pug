@@ -1,0 +1,28 @@
+
+// MODAL DE EQUIPE ITINERANTE
+#ModalTCConvCateq.modal.fade(tabindex="-1", role="dialog", aria-labelledby="ModalEquipeItinerante", aria-hidden="true")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Convivência de Catequistas
+				button.close(type="button", data-dismiss="modal", aria-label="Close")
+					i.far.fa-times-circle(aria-hidden="true")
+			.modal-body
+				form(id="", method="", action="")
+					.form-group
+						label.col-form-label(for="SelEquipeItinerante") Qual Equipe Está Agendando?
+						select(name="SelEquipeItinerante").form-control.form-control-lg
+							option(value="0") 
+								| Selecione
+			.modal-footer
+				button.btn.btn-primary(type="button", onClick= "window.location= 'Cad-Evento-P2.html'") 
+					i.far.fa-check-circle
+					| &nbsp; Confirmar
+
+				button.btn.btn-secondary(type="button", data-dismiss="modal") 
+					i.fas.fa-ban 
+					| &nbsp; Cancelar
+// ------- FIM DO MODAL DE EQUIPE ITINERANTE
+
+
+

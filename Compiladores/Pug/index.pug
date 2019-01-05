@@ -1,0 +1,37 @@
+//- OBS: SE FOR TRABALHAR COM GRID NAS PRINCIPAIS TAGS, PRECISA MANTER OS CLEARFIX ABAIXO. SE NÃO FOR TRABALHAR COM GRID DE INICIO NÃO TEM NECESSIDADE DE DEIXA-LAS AQUI...
+
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/Default
+
+//- TÍTULO DA PÁGINA ↓
+block title 
+	| Bem Vindo ao Hospeda CNC
+
+block CSSEspecifico
+	//- AQUI ENTRA CSSs ESPECIFICOS
+	link(href="assets/css/lib/dcalendar.picker/dcalendar.picker.css", rel="stylesheet")
+	link(href="assets/css/lib/FullCalendar/fullcalendar.min.css", rel="stylesheet")
+	link(href="assets/css/lib/FullCalendar/fullcalendar.print.min.css", rel="stylesheet", media="print")
+
+//- TÍTULO QUE APARECE NO TOPO DA PÁGINA ↓
+mixin TituloPagina()
+	small.lead.d-inline
+		| &nbsp;&nbsp; Calendário da Casa de Convivência
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	//- AQUI COLOCAR AS PARTES FIXAS COMO MENU TOPO, CONTEUDO E FOOTER
+	include ParteFixa/NavIndex
+
+	main.container-fluid
+		include Paginas/Calendar
+
+block ScriptEspecifico
+	//- AQUI ENTRA SCRIPTS ESPECIFICOS
+	script(src="assets/js/lib/FullCalendar/jquery-ui.min.js")
+	script(src="assets/js/lib/FullCalendar/moment.min.js")
+	script(src="assets/js/lib/FullCalendar/fullcalendar.min.js")
+	script(src="assets/js/lib/FullCalendar/gcal.min.js")
+	script(src="assets/js/lib/FullCalendar/pt-br.js")
+	script(src="assets/js/lib/dcalendar.picker/dcalendar.picker.js")
+	script(src="assets/js/CalendarioEventosCasa.js")

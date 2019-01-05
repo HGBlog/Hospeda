@@ -1,0 +1,248 @@
+.hide {
+     display: none;
+ }
+.full-height {
+     min-height: 100%;
+     height: 100%;
+ }
+ .bottomAlto {
+    padding-bottom: 219px;
+ }
+ 
+ .no-sel {
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+ .no-transform:hover {
+     -moz-transform: none;
+     -webkit-transform: none;
+     -ms-transform: none;
+ }
+ .required:after {
+     content: '*';
+     color: #ff0000;
+     padding-left: 5px;
+     font-size: 16px;
+ }
+
+ .ir {
+   font: 0/0 a;
+   text-shadow: none;
+   color: transparent;
+ }
+
+ .no-transition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+ }
+
+ .unstyled-list {
+    padding: 0;
+    margin: 0 -12px 0 -6px;
+    list-style: none;
+ }
+
+ .not-bold {
+    font-weight: 600;
+ }
+
+
+ /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before, .cf:after {
+     content:" ";
+     /* 1 */
+     display: table;
+     /* 2 */
+ }
+ .cf:after {
+     clear: both;
+ }
+ /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ .cf {
+     *zoom: 1;
+ }
+
+.dragging {
+    cursor: grabbing !important;
+    cursor: -moz-grabbing !important;
+    cursor: -webkit-grabbing !important;
+    opacity: 0.4;
+    /*-webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);*/
+}
+
+.wrapper--tiles {
+    margin-top: 15px;
+}
+
+    .tile, .jafoi {
+        background: #f5f5f5;
+        border: 2px dotted #dadada;
+        box-sizing: border-box;
+        color: transparent;
+        float: left;        
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+        .tile[draggable="true"] {
+            cursor: -webkit-grab;
+            cursor: grab;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -khtml-user-drag: element;
+            -webkit-user-drag: element;
+        }
+
+        .tile .close{
+            position: absolute;
+            z-index: 1;
+            margin-left: 40px;
+            background-color: #fff;
+            border-radius: 51px;
+            opacity: 1;
+            margin-top: -6px;            
+        }
+            .tile .close:focus{
+                outline:  none;
+            }
+            .tile .close i{
+                color: #dc3545;    
+            }
+        
+.wrapper--assigned-tiles.full-width {
+    width: 100%;
+}
+.wrapper--assigned-tiles.full-width > .tile {
+    width: 24.4%;
+}
+
+.wrapper--assigned-tiles {
+    /*float: left;
+    width: 80%;
+    -webkit-transition: -webkit-transform 0.1s ease-out;
+    -moz-transition: -moz-transform 0.1s ease-out;
+    -o-transition: -o-transform 0.1s ease-out;
+    -ms-transition: -ms-transform 0.1s ease-out;*/
+}
+
+    .wrapper--assigned-tiles > .tile {
+        /* -webkit-animation: zoom-in 0.3s cubic-bezier(.1, -0.04, .91, .94) forwards;
+        animation: zoom-in 0.3s cubic-bezier(.1, -0.04, .91, .94) forwards;*/
+        height: 94px;        
+        cursor: no-drop;
+    }
+
+    .wrapper--assigned-tiles > .tile:nth-child(4),
+    .wrapper--assigned-tiles > .tile:nth-child(8) {
+        margin-right: 0;
+    }
+
+    .wrapper--assigned-tiles .assigned-tile {
+        background: #f5f5f5;
+        border-color: #d6d6d6;
+        border-style: solid;
+        line-height: 180px;
+    }
+
+    .assigned-tile,
+    .unassigned-tile {
+        color: inherit;
+        font: inherit;
+        text-shadow: inherit;
+    }
+
+    .edit-mode .assigned-tile {
+        cursor: move;
+    }
+    .over,
+    .assigned-tile.over {
+        border: 2px dotted #28a745;
+        background-color: #cbffd6;
+        color: #28a745 !important;
+    }
+    .over:after{
+        color: #28a745 !important;   
+    }
+
+.wrapper--unassigned-tiles {
+    
+}
+    .unassigned-tile {
+        text-align: center;
+        background: transparent;
+        border: none;
+    }
+
+@-webkit-keyframes zoom-in {
+    from {
+        opacity: 0;
+        -webkit-transform:scale(0);
+        -moz-transform:scale(0);
+        -ms-transform:scale(0);
+        -o-transform:scale(0);
+        transform:scale(0);
+    }
+    to {
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+@-ms-keyframes zoom-in {
+    from {
+        opacity: 0;
+        -webkit-transform:scale(0);
+        -moz-transform:scale(0);
+        -ms-transform:scale(0);
+        -o-transform:scale(0);
+        transform:scale(0);
+    }
+    to {
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+.wrapper--assigned-tiles.tile:nth
+child(2),
+.wrapper--assigned-tiles .tile:nth-child(6) {
+    -webkit-animation-delay: .05s;
+    animation-delay: .05s;
+}
+.wrapper--assigned-tiles .tile:nth-child(3),
+.wrapper--assigned-tiles .tile:nth-child(7) {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+.wrapper--assigned-tiles .tile:nth-child(4),
+.wrapper--assigned-tiles .tile:nth-child(8) {
+    -webkit-animation-delay: .12s;
+    animation-delay: .12s;
+}

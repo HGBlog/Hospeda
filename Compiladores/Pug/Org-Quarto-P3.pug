@@ -1,0 +1,31 @@
+//- OBS: SE FOR TRABALHAR COM GRID NAS PRINCIPAIS TAGS, PRECISA MANTER OS CLEARFIX ABAIXO. SE NÃO FOR TRABALHAR COM GRID DE INICIO NÃO TEM NECESSIDADE DE DEIXA-LAS AQUI...
+
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/Default
+
+//- TÍTULO DA PÁGINA ↓
+block title 
+	| Hospeda CNC - Organizar os Quartos
+
+block CSSEspecifico
+	//- AQUI ENTRA CSSs ESPECIFICOS
+	link(href="assets/css/lib/DraggAndDropp/CSSDraggAndDropp.css", rel="stylesheet")
+
+//- TÍTULO QUE APARECE NO TOPO DA PÁGINA ↓
+mixin TituloPagina()
+	small.lead.d-inline
+		| &nbsp;&nbsp; Organização de Pessoas nos Quartos
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	
+	//- AQUI COLOCAR AS PARTES FIXAS COMO MENU TOPO, CONTEUDO E FOOTER
+	include ParteFixa/Nav
+
+	main.container-fluid
+		include Paginas/OQ-PessoasEQuartos.pug
+		include Paginas/Modal/OQ-FI-Modal.pug
+
+block ScriptEspecifico
+	//- AQUI ENTRA SCRIPTS ESPECIFICOS
+	script(src="assets/js/lib/DraggAndDropp/ScriptsGeraisDraggAndDropp.js")

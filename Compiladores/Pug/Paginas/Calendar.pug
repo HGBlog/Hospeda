@@ -1,0 +1,42 @@
+.row.ContainerHome
+	.col-12.col-md-5.col-lg-4.col-xl-3.OrderAside
+		table(id="MiniCalendario" class="calendar")
+		ul.list-unstyled.listEventos.bgPadrao.shadowPadrao
+			li.media.liTitulo
+				.media-body
+					h5 
+						i.fas.fa-calendar-alt
+						| &nbsp;&nbsp;Próximos Eventos
+			li.media.liEvento.EventConvCurso
+				.media-body
+					h5.mt-0.mb-1 05 Out
+					span.badge.badge-pill.badge-success 
+						| Insc. Concluídas
+					br
+					a(href="Org-Quarto-P2.html" title="Convivência de Curso")
+						| Convivência de Curso
+					span.SDtHs
+						| 05 - 20h00 às 08 - 15h00
+					span.SEq
+						| Equipe Nacional
+					button.btn.float-right.btn-success(type="button", onClick= "window.location= 'Org-Quarto-P2.html'") 
+						i.fas.fa-bed
+						| Organizar Quarto
+			li.media.liEvento.EventConvFamilia
+				.media-body
+					h5.mt-0.mb-1 15 Out
+					span.badge.badge-pill.badge-warning 
+						| Insc. em Andamento
+					br
+					a(title="Convivência de Curso")
+						| Convivência das Famílias
+					span.SDtHs
+						| 16 - 20h00 às 23 - 15h00
+					span.SEq
+						| Equipe Nacional
+					button.btn.float-right.btn-success(type="button", disabled) 
+						i.fas.fa-bed
+						| Organizar Hosped.
+
+	.col-12.col-md-7.col-lg-8.col-xl-9.OrderArticle
+		#calendar.bgPadrao.shadowPadrao

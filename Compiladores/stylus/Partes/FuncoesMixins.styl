@@ -1,0 +1,43 @@
+// FUNÇÃO PARA POR ESPAÇO APENAS EM BOTÕES LADO A LADO
+
+/* EXEMPLO DE UMA FUNÇÃO
+	LaLButton()
+		&+&
+			margin-left: 5px
+*/
+LimitadorTam(Height)
+	max-width 10rem
+	overflow hidden
+	height Height
+	white-space nowrap
+	
+Hover()
+	opacity 0.5
+	filter Alpha(opacity=50)
+Hover75()
+	opacity 0.7
+	filter Alpha(opacity=70)
+		
+Load()
+	@keyframes spinner
+			to {transform: rotate(360deg);}
+		&:after
+			to transform rotate(45deg)
+			content ''
+			box-sizing border-box
+			position absolute
+			top 50%
+			left 50%
+			width 70px
+			height 70px
+			margin-top -46px
+			margin-left -35px
+			border-radius 50%
+			border 1px solid CinzaPadrao
+			border-top-color VerdePadrao
+			animation spinner .6s linear infinite
+			
+shadow()
+	-webkit-box-shadow 2px 2px 2px 0px rgb(187, 187, 187)
+	-moz-box-shadow 2px 2px 2px 0px rgb(187, 187, 187)
+	box-shadow 2px 2px 2px 0px rgb(187, 187, 187)

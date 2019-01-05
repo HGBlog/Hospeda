@@ -1,0 +1,97 @@
+.row
+	include ../Estrutura/CalendarioHorizontal
+
+	// AQUI COMEÇA O BREADCRUMB DE AÇÕES
+	.col-12.breadPadrao
+		a.badge.badge-danger(href="Cad-Evento-P1.html" title="Quem agendou foi a Equipe Nacional")
+			i.fas.fa-users
+			| &nbsp; Equipe Nacional
+		a.badge.badge-danger(href="Cad-Evento-P2.html" title="Tipo de Convivência")
+			i.fas.fa-calendar-check
+			| &nbsp; Convivência de Curso
+		a.badge.badge-danger(href="#" title="Tipo de Convivência")
+			i.fas.fa-users
+			| &nbsp; Quem Participara?
+		
+		span.float-right
+			small.badge.badge-primary
+				| Passo 3 
+			| de 5
+	// ------- FIM DO BREADCRUMB DE AÇÕES
+
+	// AQUI INICIA A PARTE DE CONTEÚDO GERAL
+	.col-12.btOpcoesPadrao
+		h2.display-4.text-center.text-uppercase
+			| Quem poderá participar?
+		.mx-auto.row
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="EqItinerantesNNC")
+					input#EqItinerantesNNC(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Equipes Itinerantes NNC
+					small Norte, Nordeste e Centro Oeste
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="EqItinerantesCSS")
+					input#EqItinerantesCSS(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Equipes Itinerantes CSS
+					small Centro Oeste, Sudeste e Sul
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="FamMissao")
+					input#FamMissao(type="checkbox", autocomplete="off") 
+					i.fas.fa-user-friends.d-block
+					| Famílias em Missão
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="SemBrasilia")
+					input#SemBrasilia(type="checkbox", autocomplete="off") 
+					i.fas.fa-church.d-block
+					| Seminário Brasília
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="SemSaoPaulo")
+					input#SemSaoPaulo(type="checkbox", autocomplete="off") 
+					i.fas.fa-church.d-block
+					| Seminário São Paulo
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="SemRioJan")
+					input#SemRioJan(type="checkbox", autocomplete="off") 
+					i.fas.fa-church.d-block
+					| Seminário Rio Janeiro
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="SemPara")
+					input#SemPara(type="checkbox", autocomplete="off") 
+					i.fas.fa-church.d-block
+					| Seminário Pará
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="CatLocalDF")
+					input#CatLocalDF(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Catequistas Locais DF
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="CatLocalSP")
+					input#CatLocalSP(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Catequistas Locais SP
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="CatLocalIntSP")
+					input#CatLocalIntSP(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Catequistas Locais Interior SP
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="CatLocalPR")
+					input#CatLocalPR(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Catequistas Locais PR
+			.btn-group-toggle.col-12.col-sm-6.col-md-3(data-toggle="buttons")
+				label.btn.btn-lg.btn-block(for="NovosLev")
+					input#NovosLev(type="checkbox", autocomplete="off") 
+					i.fas.fa-users.d-block
+					| Novos Levantados
+
+		.mx-auto.row
+			.col-12
+				button.btn.btn-lg.btn-block.btnLine.btn-success(type="button", onClick= "window.location= 'Cad-Evento-P4.html'") 
+					| &nbsp; Continuar Cadastro &nbsp; &nbsp; 
+					i.fas.fa-angle-double-right
+
+			
+	// ------- FIM DE CONTEÚDO GERAL

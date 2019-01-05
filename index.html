@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="author" content="">
+    <meta name="MSSmartTagsPreventParsing" content="true">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="">
+    <meta name="copyright" content="">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="target_country" content="br">
+    <meta name="country" content="Brazil">
+    <meta name="Revisit-After" content="5 Days">
+    <meta name="resource-type" content="document">
+    <meta name="classification" content="Internet">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="doc-class" content="Completed">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="theme-color" content="#ffffff">
+    <title>Bem Vindo ao Hospeda CNC
+    </title>
+    <!-- AQUI FICA TODOS OS CSSs DO SITE-->
+    <link href="assets/css/lib/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap/bootstrap-grid.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap/bootstrap-reboot.css" rel="stylesheet">
+    <link href="assets/css/lib/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/lib/dcalendar.picker/dcalendar.picker.css" rel="stylesheet">
+    <link href="assets/css/lib/FullCalendar/fullcalendar.min.css" rel="stylesheet">
+    <link href="assets/css/lib/FullCalendar/fullcalendar.print.min.css" rel="stylesheet" media="print">
+    <link href="assets/css/EstiloPadrao.css" rel="stylesheet">
+    <!-- ------- FIM DE TODOS OS CSSs DO SITE-->
+    <link rel="shortcut icon" href="assets/Img/Icon/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- AQUI INICIA O MENU DO TOPO-->
+    <nav class="navbar fixed-top navbar-light bg-light navCncPadrao">
+      <h1 class="navbar-brand"><img class="d-inline-block align-top" src="assets/Img/Logos/logo-Hospeda-1.png" alt="Logo Hospeda"><img class="d-inline-block align-top imgMobile" src="assets/Img/Logos/logo-Hospeda-Mobile.png" alt="Logo Hospeda"><small class="lead d-inline">&nbsp;&nbsp; Calendário da Casa de Convivência</small>
+      </h1>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"><a class="nav-link" href="index.html" title="Calendário de Eventos da Casa"> <i class="fas fa-calendar-alt"></i>Calendário</a></li>
+        <li class="nav-item"><a class="nav-link" href="Org-Quarto-P1.html" title="Organizar Hospedagem"> <i class="fas fa-bed"></i>Organizar Hosped.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Cadastro de Equipe"> <i class="fas fa-users"></i>Cad. Equipe</a></li>
+        <li class="nav-item"><a class="nav-link text-hide LinkPerfil rounded-circle" href="#" title="Perfil do Usuário">Perfil do Usuário</a></li>
+        <li class="nav-item"><a class="nav-link BtnIcon" href="#" title="Sair do Sistema"> <i class="fas fa-sign-out-alt"></i><span class="text-hide">Sair do Sistema</span></a></li>
+      </ul>
+    </nav>
+    <!-- ------- FIM DO MENU DO TOPO-->
+    <main class="container-fluid">
+      <div class="row ContainerHome">
+        <div class="col-12 col-md-5 col-lg-4 col-xl-3 OrderAside">
+          <table class="calendar" id="MiniCalendario"></table>
+          <ul class="list-unstyled listEventos bgPadrao shadowPadrao">
+            <li class="media liTitulo">
+              <div class="media-body">
+                <h5> <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;Próximos Eventos</h5>
+              </div>
+            </li>
+            <li class="media liEvento EventConvCurso">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">05 Out</h5><span class="badge badge-pill badge-success">
+                   Insc. Concluídas</span><br><a href="Org-Quarto-P2.html" title="Convivência de Curso">Convivência de Curso</a><span class="SDtHs">05 - 20h00 às 08 - 15h00</span><span class="SEq">Equipe Nacional</span>
+                <button class="btn float-right btn-success" type="button" onClick="window.location= 'Org-Quarto-P2.html'"> <i class="fas fa-bed"></i>Organizar Quarto</button>
+              </div>
+            </li>
+            <li class="media liEvento EventConvFamilia">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">15 Out</h5><span class="badge badge-pill badge-warning">
+                   Insc. em Andamento</span><br><a title="Convivência de Curso">Convivência das Famílias</a><span class="SDtHs">16 - 20h00 às 23 - 15h00</span><span class="SEq">Equipe Nacional</span>
+                <button class="btn float-right btn-success" type="button" disabled> <i class="fas fa-bed"></i>Organizar Hosped.</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9 OrderArticle">
+          <div class="bgPadrao shadowPadrao" id="calendar"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- AQUI FICA TODOS OS SCRIPTS DO SISTEMA-->
+  <script src="assets/js/lib/jquery.min.js"></script>
+  <script src="assets/js/lib/popper/popper.min.js"></script>
+  <script src="assets/js/lib/popper/popper-utils.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lib/FullCalendar/jquery-ui.min.js"></script>
+  <script src="assets/js/lib/FullCalendar/moment.min.js"></script>
+  <script src="assets/js/lib/FullCalendar/fullcalendar.min.js"></script>
+  <script src="assets/js/lib/FullCalendar/gcal.min.js"></script>
+  <script src="assets/js/lib/FullCalendar/pt-br.js"></script>
+  <script src="assets/js/lib/dcalendar.picker/dcalendar.picker.js"></script>
+  <script src="assets/js/CalendarioEventosCasa.js"></script>
+  <!-- ------- FIM DE TODOS OS SCRIPTS DO SISTEMA-->
+</html>
